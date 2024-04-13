@@ -1,3 +1,4 @@
+
 /* hero background image */
 .serviceContainer {
     height:100vh;  
@@ -9,7 +10,7 @@
     font-size: 4.5rem;
 }
 .hero_desc {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .hero-text {
     text-align: center;
@@ -75,9 +76,10 @@ border: 1px solid rgba(255, 255, 255, 0.19);
 
 body {
     margin: auto;
-    font-family: "Courier New", monospace;
+    font-family:Roboto Mono , sans-serif;
     overflow: auto;
-    background: linear-gradient(315deg, rgba(10, 25, 47, 1) 0%, rgba(20, 40, 77, 1) 25%, rgba(3, 78, 123, 1) 50%, rgba(4, 116, 177, 1) 75%, rgba(5, 150, 220, 1) 100%);
+    /*background: linear-gradient(315deg, rgba(10, 25, 47, 1) 0%, rgba(20, 40, 77, 1) 25%, rgba(3, 78, 123, 1) 50%, rgba(4, 116, 177, 1) 75%, rgba(5, 150, 220, 1) 100%); */
+    background: linear-gradient(to bottom, #1FA0FF, #12DAFB, #A7FDCC);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
@@ -101,7 +103,7 @@ body {
     position: fixed;
     width: 200%;
     height: 12em;
-    animation: wave 10s -3s linear infinite;
+    animation: wave 10s -2s linear infinite;
     transform: translate3d(0, 0, 0);
     opacity: 0.8;
     bottom: 0;
@@ -287,13 +289,13 @@ footer .right-column{
     background: rgba(179, 155, 155, 0.1); /* Semi-transparent white background */
     backdrop-filter: blur(10px); /* Glassmorphism effect */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-    color: #fff;
+    color: #c16d6d;
 }
 
 .navbar-brand {
     color: #fff; /* White color for the brand name */
     font-weight: bold; /* Bold font for emphasis */
-    font-size: 18px; /* Larger font size */
+    font-size: 30px; /* Larger font size */
 }
 
 .navbar-toggler {
@@ -422,16 +424,30 @@ footer .right-column{
     padding: 20px 0; /* Padding around the section */
 }
 
-#skills h3 {
-    color: #333; /* Dark color for headers */
-    margin-bottom: 15px; /* Spacing after headers */
-}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+  }
 
-.skill-item, #skills ul li {
-    margin-bottom: 10px; /* Spacing between items */
-    font-size: 20px; /* Font size for list items */
-    line-height: 1.6; /* Line height for better readability */
-}
+h3.text-center {
+    width: 100%;
+    margin-bottom: 30px; /* More space below the heading */
+  }
+
+.skill-item {
+    padding: 10px 20px;
+    background-image: linear-gradient(315deg, #44b09e 0%, #e0d2c7 74%);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    margin: 5px; /* Spacing between items */
+    flex-grow: 1;
+    text-align: center;
+    font-size:16px;
+  }
 
 .skill-item i, #skills ul li i {
     color: #000000; /* Blue color for icons */
