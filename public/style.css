@@ -437,27 +437,88 @@ nav ul li a:hover {
     padding: 10px; /* Adds some padding inside each column */
 }
 
-.contact .social-links a {
-    color: #64ffda; /* Bright cyan */
-    margin: 20px 10px 0 10px; /* Adds more space to the top of each link */
-    text-decoration: none; /* Removes underline */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transition */
-}
-
-#contact .social-links a i {
-    margin-top: 25px; /* Adds more space to the top of each icon */
-    font-size: 50px; /* Larger icon size */
-    padding-right: 30px;
-}
-
-#contact .social-links a:hover {
-    color: #ccd6f6; /* Soft light blue on hover */
-    transform: translateY(-5px); /* Moves the link up slightly on hover */
-}
-
-#contact .social-links a:hover i {
-    transform: scale(1.1); /* Slightly enlarges the icon on hover */
-}
+.card {
+    display: flex;
+    height: 60px;
+    width: 350px;
+    margin-top: 20px;
+    margin-right: -20px;
+  }
+  
+  .card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    padding: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+  }
+  
+  .card svg {
+    transform: scale(1);
+  }
+  
+  .card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link2:hover {
+    background-color: #242c34;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link4:hover {
+    background-color: #0a66c2;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
 
   button {
     min-height: 53px;
@@ -537,6 +598,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between; /* Space distribution */
     align-items: center; /* Vertical alignment */
+    
 }
 
 .footer-left, .footer-right {
@@ -572,49 +634,12 @@ nav ul li a:hover {
 }
 
 
-/* Footer Social Media Icons */
-.footer-right .social-media {
-    display: flex; /* Align icons in a row */
-    justify-content: center; /* Center align icons */
-    gap: 30px; /* Space between icons */
-}
-
-.footer-right .social-media a {
-    font-size: 45px; /* Increase the size of the icons */
-    color: #e6f1ff; /* Bright cyan for icons */
-    transition: color 0.3s ease; /* Smooth transition for color change */
-}
-
-.footer-right .social-media a:hover {
-    color: #ccd6f6; /* Soft light blue on hover */
-    transform: scale(1.2); /* Slightly enlarge icons on hover */
-}
-
-/* Additional Styling for Accessibility and Effect */
-.footer-right .social-media a:focus {
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.5); /* Custom focus indicator */
-}
-
-.footer-right .social-media i {
-    transition: transform 0.3s ease; /* Smooth transform on hover */
-}
-
-/* Ensure icons have appropriate ARIA labels for accessibility */
-.footer-right .social-media a[aria-label] {
-    cursor: pointer;
-}
-
-.footer-right .social-media a[aria-label]:hover i {
-    transform: translateY(-3px); /* Slight upward movement on hover */
-}
-
-
 
 .footer-right .email-links {
     display: flex;
     flex-direction: column; /* Stacks email links vertically */
     align-items: flex-end; /* Aligns email links to the right */
+    margin-top: 20px;
 }
 
 .footer-right .email-link {
