@@ -314,7 +314,7 @@ nav ul li a:hover {
     padding: 40px 50px;
     margin: 20px auto; /* Centering the section */
     border-radius: 10px;
-    border-left: 30px solid #d1eee8; /* Cyan highlight */
+    border-right: 30px solid #d1eee8; /* Cyan highlight */
     width: 80%; /* Adjusted width */
     box-sizing: border-box; /* Includes padding and border in the width */
     backdrop-filter: blur(20px); /* Blurs the area behind the element */
@@ -327,6 +327,7 @@ nav ul li a:hover {
 #projects .project-img {
     width: 400px; /* Set the width */ /* Set the height */
     object-fit: cover;
+    margin-top: 15px; /* Adds space above the image */
 }
 
 #projects .project img {
@@ -387,7 +388,9 @@ nav ul li a:hover {
     border: 1px solid rgba(0,0,0,0);
     cursor: pointer;
     transition: transform 0.5s;
-    margin-left: 20px;
+    margin-left: 1250px; 
+    margin-top: 15px;
+  
   }
   
   .btn:hover {
@@ -408,8 +411,8 @@ nav ul li a:hover {
   }
   
   .btn:hover svg {
-    transform: scale(0.9);
-    fill: #4682B4; /* Change color on hover, here is a steel blue color */
+    transform: scale(0.8);
+    fill: #000000; /* Change color on hover, here is a steel blue color */
   }
   
   
