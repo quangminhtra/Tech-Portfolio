@@ -634,7 +634,6 @@ nav ul li a:hover {
 }
 
 
-
 .footer-right .email-links {
     display: flex;
     flex-direction: column; /* Stacks email links vertically */
@@ -746,7 +745,6 @@ nav ul li a:hover {
         text-align: center; /* Center align the text */
     }
 
-    .footer-right .social-media,
     .footer-right .email-links {
         justify-content: center; /* Center these elements */
     }
@@ -767,7 +765,7 @@ footer {
 .animated-button,
 .nav ul li,
 .footer-left nav ul li,
-.footer-right .social-media a {
+.footer-right .email-links {
     padding: 10px; /* Increase padding for touch friendliness */
 }
 
