@@ -49,7 +49,7 @@ body {
     font-size: 1.5rem;
     color: #e6f1ff #e6f1ff;
     margin-bottom: 20px;
-    margin-left: 300px
+    margin-left: 100px
    
     
 }
@@ -60,11 +60,11 @@ body {
     font-size: 1.2rem;
     background-color: #64FFDA;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     color: #0a192f;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    margin-left: 850px;
+    margin-left: 720px;
 
   
 }
@@ -91,8 +91,8 @@ body {
   the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
   if there is 20 put 20 */
   .animation {
-    font: bold 600% Consolas, Monaco, monospace; /* Makes the text bigger */
-    border-right: .1em solid #e6f1ff #e6f1ff;
+    font: bold 520% Consolas, Monaco, monospace; /* Makes the text bigger */
+    border-right: 0em solid #e6f1ff #e6f1ff;
     width: 31ch;
     margin: 2em 2em;
     white-space: nowrap;
@@ -383,7 +383,7 @@ nav ul li a:hover {
     border: 1px solid rgba(0,0,0,0);
     cursor: pointer;
     transition: transform 0.5s;
-    margin-left: 110px;
+    margin-left: 20px;
   }
   
   .btn:hover {
