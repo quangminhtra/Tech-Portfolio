@@ -170,16 +170,19 @@ body {
 
 /* Techinal Skills Section */
 .technical.skills {
+    margin-top: 60px;
     background-color:#233554; /* Dark navy blue */
     color: #ccd6f6; /* Soft light blue text */
-    font-size: 18px;
+    font-size: 16px;
     padding: 20px;
     border-radius: 10px;
+    margin-right: 90px;
 }
 
 .technical.skills h4 {
     font-size: 1.5em;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .technical.skills ul {
@@ -208,7 +211,7 @@ body {
 nav {
     width: 75%; /* Ensures the nav fills the container */
     margin-top: 0px; /* Centers the nav */
-    
+   
     
 }
 nav ul {
@@ -227,12 +230,13 @@ nav ul li a {
 
     text-decoration: none;
     font-size: 20px;
-    transition: color 0.5s ease;
+    transform: translateX(20px); /* Moves the entire navigation item to the right */
     
 }
 
 nav ul li a:hover {
-    color: #dce7e4; /* Changes color on hover */
+    COLOR:#8892b0;
+    transform: translateX(20px); /* Moves the link 10px to the right */
 }
 
 
