@@ -110,7 +110,7 @@ body {
     margin: 0 auto;
     max-width: 70%; /* Limits width of content */
     color: #ccd6f6; /* Soft light blue text */
-    padding: 60px; /* Add padding for better spacing */
+    padding: 20px; /* Add padding for better spacing */
 }
 
 #about-me .left-column, #about-me .right-column {
@@ -126,7 +126,7 @@ body {
 
 #about-me .right-column {
     text-align: left; /* Aligns text to the right */
-    flex: 0.7; /* Right column takes up 80% of the space */
+    flex: 0.9; /* Right column takes up 80% of the space */
     
 }
 
@@ -170,10 +170,9 @@ body {
 
 /* Techinal Skills Section */
 .technical.skills {
-    margin-top: 60px;
     background-color:#233554; /* Dark navy blue */
     color: #ccd6f6; /* Soft light blue text */
-    font-size: 16px;
+    font-size: 18px;
     padding: 20px;
     border-radius: 10px;
     margin-right: 90px;
@@ -204,7 +203,16 @@ body {
     margin-right: 10px; /* Adds space to the right of the icon */
     
 }
-
+.certification-link {
+    color:#e6f1ff; /* Initial color */
+    text-decoration: none; /* No underline initially */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for color and text-decoration */
+  }
+  
+  .certification-link:hover {
+    color: #0d7ef6; /* Color on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
 
 
 /* Navigation Styling */
