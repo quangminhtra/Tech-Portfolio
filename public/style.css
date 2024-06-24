@@ -176,6 +176,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin-right: 90px;
+   
 }
 
 .technical.skills h4 {
@@ -296,9 +297,10 @@ nav ul li a:hover {
     display: inline-block;
     background-color: #112240; /* Slightly lighter navy blue */
     color: #64ffda;
-    margin-right: 10px;
+    margin-right: 15px;
     padding: 5px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 
